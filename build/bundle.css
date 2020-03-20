@@ -3,7 +3,7 @@ body{margin:0;padding:0}:root{--color-accent:#f4a622;--color-text:#fef9f1;--colo
 button.svelte-9ymo7{text-transform:uppercase;width:100%;height:var(--height-form-control);background:var(--color-accent);color:var(--color-text);box-shadow:0px 1px 1px 0px var(--color-shadow);border:none;border-radius:var(--border-radius);cursor:pointer}button.svelte-9ymo7:hover{background:var(--color-accent);filter:brightness(105%)}button.svelte-9ymo7:active{background:var(--color-accent);filter:brightness(115%)}
 .date-input.svelte-18m07kr{position:relative}.icon.svelte-18m07kr{position:absolute;top:calc(var(--height-form-control) / 2 + 2px);right:10px;transform:translateY(-50%)}input.svelte-18m07kr{width:100%;height:var(--height-form-control);border-radius:var(--border-radius);padding:0 27px 0 10px;border:none}
 h2.svelte-1gr6ekw{margin:0 0 12px;color:var(--color-text);font-weight:500}
-a.svelte-19q204a{margin:0 0 12px 10px;text-decoration:underline}
 p.svelte-qy4r6b{margin:10px 0;color:var(--color-text);font-size:var(--font-size-text)}
+a.svelte-19q204a{margin:0 0 12px 10px;text-decoration:underline}
 
 /*# sourceMappingURL=bundle.css.map */
