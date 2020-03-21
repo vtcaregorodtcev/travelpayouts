@@ -1,0 +1,84 @@
+<script>
+  (function (window, document) {
+    document.addEventListener('DOMContentLoaded', function () {
+      window.Travelpayouts = window.Travelpayouts || function t(params = {}) {
+        const body = document.body;
+
+        const target = params.target ? (document.querySelector(params.target) || body) : body;
+
+        const width = params.width || 400;
+        const height = params.height || 285;
+
+        const locale = params.locale || 'en';
+        const theme = params.theme || '';
+
+        const iframe = document.createElement("iframe");
+        const url = new URL('https://vtcaregorodtcev.github.io/travelpayouts');
+
+        url.searchParams.append('locale', locale);
+        url.searchParams.append('theme', theme);
+
+        iframe.src = url.href;
+        iframe.name = "Travelpayouts"
+
+        iframe.width = width;
+        iframe.height = height;
+
+        iframe.setAttribute("style", `
+            border-radius: 4px;
+            border: none;
+            box-shadow: 10px 10px 30px 15px #ddd
+        `);
+
+        target.appendChild(iframe);
+      }
+
+      window.Travelpayouts({ target: '#widget1' })
+      window.Travelpayouts({ target: '#widget2', theme: 'dark' })
+      window.Travelpayouts({ target: '#widget3', width: '1064px', height: '140px' })
+    })
+  })(window, document)
+</script>
+
+<div class="container">
+  <div class="row">
+    <div class="code">
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+        <pre
+          style="margin: 0; line-height: 125%"><span style="color: #666666">&lt;script>!</span><span style="color: #AA22FF; font-weight: bold">function</span>(e,t){t.addEventListener(<span style="color: #BB4444">&quot;DOMContentLoaded&quot;</span>,<span style="color: #AA22FF; font-weight: bold">function</span>(){e.Travelpayouts<span style="color: #666666">=</span>e.Travelpayouts<span style="color: #666666">||</span><span style="color: #AA22FF; font-weight: bold">function</span>(e<span style="color: #666666">=</span>{}){<span style="color: #AA22FF; font-weight: bold">const</span> a<span style="color: #666666">=</span>t.body,r<span style="color: #666666">=</span>e.target<span style="color: #666666">&amp;&amp;</span>t.querySelector(e.target)<span style="color: #666666">||</span>a,o<span style="color: #666666">=</span>e.width<span style="color: #666666">||400</span>,n<span style="color: #666666">=</span>e.height<span style="color: #666666">||285</span>,d<span style="color: #666666">=</span>e.locale<span style="color: #666666">||</span><span style="color: #BB4444">&quot;en&quot;</span>,p<span style="color: #666666">=</span>e.theme<span style="color: #666666">||</span><span style="color: #BB4444">&quot;&quot;</span>,s<span style="color: #666666">=</span>t.createElement(<span style="color: #BB4444">&quot;iframe&quot;</span>),h<span style="color: #666666">=</span><span style="color: #AA22FF; font-weight: bold">new</span> URL(<span style="color: #BB4444">&quot;https://vtcaregorodtcev.github.io/travelpayouts&quot;</span>);h.searchParams.append(<span style="color: #BB4444">&quot;locale&quot;</span>,d),h.searchParams.append(<span style="color: #BB4444">&quot;theme&quot;</span>,p),s.src<span style="color: #666666">=</span>h.href,s.name<span style="color: #666666">=</span><span style="color: #BB4444">&quot;Travelpayouts&quot;</span>,s.width<span style="color: #666666">=</span>o,s.height<span style="color: #666666">=</span>n,s.setAttribute(<span style="color: #BB4444">&quot;style&quot;</span>,<span style="color: #BB4444">&quot;border-radius: 4px;border: none;box-shadow: 10px 10px 30px 15px #ddd&quot;</span>),r.appendChild(s)},e.Travelpayouts()})}(<span style="color: #AA22FF">window</span>,<span style="color: #AA22FF">document</span>);&lt;/script></pre>
+      </div>
+    </div>
+    <div id="widget1" class="widget"></div>
+  </div>
+  <div class="row">
+    <div class="code">
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+        <pre
+          style="margin: 0; line-height: 125%"><span style="color: #666666">&lt;script>!</span><span style="color: #AA22FF; font-weight: bold">function</span>(e,t){t.addEventListener(<span style="color: #BB4444">&quot;DOMContentLoaded&quot;</span>,<span style="color: #AA22FF; font-weight: bold">function</span>(){e.Travelpayouts<span style="color: #666666">=</span>e.Travelpayouts<span style="color: #666666">||</span><span style="color: #AA22FF; font-weight: bold">function</span>(e<span style="color: #666666">=</span>{}){<span style="color: #AA22FF; font-weight: bold">const</span> a<span style="color: #666666">=</span>t.body,r<span style="color: #666666">=</span>e.target<span style="color: #666666">&amp;&amp;</span>t.querySelector(e.target)<span style="color: #666666">||</span>a,o<span style="color: #666666">=</span>e.width<span style="color: #666666">||400</span>,n<span style="color: #666666">=</span>e.height<span style="color: #666666">||285</span>,d<span style="color: #666666">=</span>e.locale<span style="color: #666666">||</span><span style="color: #BB4444">&quot;en&quot;</span>,p<span style="color: #666666">=</span>e.theme<span style="color: #666666">||</span><span style="color: #BB4444">&quot;&quot;</span>,s<span style="color: #666666">=</span>t.createElement(<span style="color: #BB4444">&quot;iframe&quot;</span>),h<span style="color: #666666">=</span><span style="color: #AA22FF; font-weight: bold">new</span> URL(<span style="color: #BB4444">&quot;https://vtcaregorodtcev.github.io/travelpayouts&quot;</span>);h.searchParams.append(<span style="color: #BB4444">&quot;locale&quot;</span>,d),h.searchParams.append(<span style="color: #BB4444">&quot;theme&quot;</span>,p),s.src<span style="color: #666666">=</span>h.href,s.name<span style="color: #666666">=</span><span style="color: #BB4444">&quot;Travelpayouts&quot;</span>,s.width<span style="color: #666666">=</span>o,s.height<span style="color: #666666">=</span>n,s.setAttribute(<span style="color: #BB4444">&quot;style&quot;</span>,<span style="color: #BB4444">&quot;border-radius: 4px;border: none;box-shadow: 10px 10px 30px 15px #ddd&quot;</span>),r.appendChild(s)},e.Travelpayouts({theme: "dark"})})}(<span style="color: #AA22FF">window</span>,<span style="color: #AA22FF">document</span>);&lt;/script></pre>
+      </div>
+    </div>
+    <div id="widget2" class="widget"></div>
+  </div>
+  <div class="row">
+    <div class="code">
+      <div
+        style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+        <pre
+          style="margin: 0; line-height: 125%"><span style="color: #666666">&lt;script>!</span><span style="color: #AA22FF; font-weight: bold">function</span>(e,t){t.addEventListener(<span style="color: #BB4444">&quot;DOMContentLoaded&quot;</span>,<span style="color: #AA22FF; font-weight: bold">function</span>(){e.Travelpayouts<span style="color: #666666">=</span>e.Travelpayouts<span style="color: #666666">||</span><span style="color: #AA22FF; font-weight: bold">function</span>(e<span style="color: #666666">=</span>{}){<span style="color: #AA22FF; font-weight: bold">const</span> a<span style="color: #666666">=</span>t.body,r<span style="color: #666666">=</span>e.target<span style="color: #666666">&amp;&amp;</span>t.querySelector(e.target)<span style="color: #666666">||</span>a,o<span style="color: #666666">=</span>e.width<span style="color: #666666">||400</span>,n<span style="color: #666666">=</span>e.height<span style="color: #666666">||285</span>,d<span style="color: #666666">=</span>e.locale<span style="color: #666666">||</span><span style="color: #BB4444">&quot;en&quot;</span>,p<span style="color: #666666">=</span>e.theme<span style="color: #666666">||</span><span style="color: #BB4444">&quot;&quot;</span>,s<span style="color: #666666">=</span>t.createElement(<span style="color: #BB4444">&quot;iframe&quot;</span>),h<span style="color: #666666">=</span><span style="color: #AA22FF; font-weight: bold">new</span> URL(<span style="color: #BB4444">&quot;https://vtcaregorodtcev.github.io/travelpayouts&quot;</span>);h.searchParams.append(<span style="color: #BB4444">&quot;locale&quot;</span>,d),h.searchParams.append(<span style="color: #BB4444">&quot;theme&quot;</span>,p),s.src<span style="color: #666666">=</span>h.href,s.name<span style="color: #666666">=</span><span style="color: #BB4444">&quot;Travelpayouts&quot;</span>,s.width<span style="color: #666666">=</span>o,s.height<span style="color: #666666">=</span>n,s.setAttribute(<span style="color: #BB4444">&quot;style&quot;</span>,<span style="color: #BB4444">&quot;border-radius: 4px;border: none;box-shadow: 10px 10px 30px 15px #ddd&quot;</span>),r.appendChild(s)},e.Travelpayouts({width: "1064px", height: "140px"})})}(<span style="color: #AA22FF">window</span>,<span style="color: #AA22FF">document</span>);&lt;/script></pre>
+      </div>
+    </div>
+    <div id="widget3" class="widget"></div>
+  </div>
+</div>
+
+<style>
+  .widget {
+    margin-top: 10px;
+  }
+
+  .row {
+    margin-bottom: 40px;
+  }
+</style>
